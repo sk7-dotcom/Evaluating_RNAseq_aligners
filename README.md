@@ -1,1 +1,1 @@
-# RNA_seq_count_generators
+# Comparing RNA-seq Count Generators
