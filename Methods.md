@@ -17,6 +17,8 @@ Fig. 2 was borrowed from Kim et al., it shows the scheme used by HISAT2 to map r
 
 ![Overview of HISAT mapping](Figures/HISAT2_scheme.jpg)
 
+##### **Overview of HISAT mapping**
+
 First, the mm10 mouse reference genome from [gencode](https://www.gencodegenes.org/mouse/) was used within `hisat-build` to construct an index. 
 
 ```
@@ -81,7 +83,9 @@ samtools view -b -q 40 -o ${out_dir}/${base}.bam ${in_dir}/${base}.bam
 
 Feature counts is a commonly used software that can quantify `.bam` files. It can be run on the terminal or from within the `Rsubread` bioconductor package. It reports raw counts for reads mapping to a features specified by a supplied `.gtf` file for genome annotations. The tool uses the schematic in Fig. 3 to count reads. 
 
-![featureCount assignment schematic](Figures/featurecounts_2.JPG)
+![featureCounts assignment schematic](Figures/featurecounts.jpg)
+
+##### **featureCounts assignment schematic**
 
 All filtered `.bam` files can be stored within a variable in R using the `file.path()` function. This can then be called within featureCounts along with: 
 
@@ -112,6 +116,8 @@ The kallisto index is builds a de Bruijin graph of k-mers. Mechanism of mapping 
 
 ![Kallisto mechanism](Figures/Kallisto_scheme_2.JPG)
 
+##### **Kallisto mechanism**
+
 The index is build by simply supplying the transcriptome and `-i` indicates the prefix for the index file. 
 
 ```
@@ -138,6 +144,8 @@ ${sample_dir}/${basename}.fastq \
 Salmon is another pseudoaligner that uses k-mer counting similar to kallisto. It claims to handle sample specific and GC bias better than kallisto. (Patro et al., 2017) It follows a similar quasimapping scheme at the start and then through the various online and offline phases arrives at the bias estimates. Fig. 5 from Patro et al. illustrates this process.
 
 ![Salmon mapping process](Figures/salmon_scheme.JPG)
+
+##### **Salmon mapping process**
 
 One advantage of salmon is that it can quantify both `.fastq` and `.bam` files generated from traditional aligners making it a versatile tool overall. To start the analysis as with all the tools discussed so far, an index is generated. Since this method uses a transcriptome. 
 
