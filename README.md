@@ -27,7 +27,7 @@ The methods section of this paper was not very specific on the settings and thre
 
 # Pipeline 
 
-![Overview of pipelines used in this project](Figures/pipeline_over.jpg)
+![Overview of pipelines used in this project](Figures/Pipeline_over.jpg)
 
 We will be exploring three pipelines in this project. All the data was initially put through `FASTQC` to assess the quality of the run. We then processed the `.fastq` files. 
 
