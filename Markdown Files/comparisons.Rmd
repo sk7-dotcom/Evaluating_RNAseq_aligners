@@ -1,0 +1,247 @@
+---
+title: "Method_differences"
+author: "Sreedevi Kesavan"
+date: "13/04/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### Packages used
+
+```{r}
+library(tidyverse)
+library(biomaRt)
+library(VennDiagram)
+library(ggplot2)
+library(ggpmisc)
+library(ggsignif)
+```
+
+
+#### Data 
+```{r}
+kallisto_count <- read_csv('kal_day7.csv')
+salmon_count <- read_csv('salmon_day7.csv')
+hisat_count <- read_csv('hisat_day7.csv')
+
+kallisto_txi <- read.csv('txi_kallisto.csv')
+salmon_txi <- read.csv('txi_salmon.csv')
+hisat_raw <- read.csv('str_counts.csv')
+```
+
+#Renaming
+
+
+```{r}
+
+salmon_count <- salmon_count %>% rename (id = X1, log2FC = log2FoldChange)
+kallisto_count <- kallisto_count %>% rename (id = X1, log2FC = log2FoldChange)
+hisat_count <- hisat_count %>% rename (id = X1, log2FC = log2FoldChange)
+
+kallisto_txi <- kallisto_txi %>% rename(id = X) 
+salmon_txi <- salmon_txi %>% rename(id = X)
+hisat_raw <- hisat_raw %>% rename (id = X)
+
+hisat_raw$id <- gsub("\\..*", "",hisat_raw$id)
+
+```
+
+#Abundance and Counts Salmon vs Kallisto
+
+```{r}
+
+kallisto_abundance <- kallisto_txi %>% 
+  rowwise() %>%
+  mutate(day14_treat = mean(c(abundance.1, abundance.2, abundance.3, abundance.4, abundance.5)), 
+         day14_control = mean(c(abundance.6, abundance.7, abundance.8, abundance.9, abundance.10)), 
+         day7_treat = mean(c(abundance.11, abundance.12, abundance.13, abundance.14, abundance.15)), 
+         day7_control = mean(c(abundance.16, abundance.17, abundance.18, abundance.19, abundance.20))) 
+
+kallisto_counts <- kallisto_txi %>% 
+  rowwise() %>%
+  mutate(day14_treat = mean(c(counts.1, counts.2, counts.3, counts.4, counts.5)), 
+         day14_control = mean(c(counts.6, counts.7, counts.8, counts.9, counts.10)), 
+         day7_treat = mean(c(counts.11, counts.12, counts.13, counts.14, counts.15)), 
+         day7_control = mean(c(counts.16, counts.17, counts.18, counts.19, counts.20)))
+
+salmon_abundance <- salmon_txi %>% 
+  rowwise() %>%
+  mutate(day14_treat = mean(c(abundance.day14_immuno_treat_1, 
+                              abundance.day14_immuno_treat_2, 
+                              abundance.day14_immuno_treat_3, 
+                              abundance.day14_immuno_treat_4, 
+                              abundance.day14_immuno_treat_5)), 
+         day14_control = mean(c(abundance.day14_isotype_control_1, 
+                                abundance.day14_isotype_control_2, 
+                                abundance.day14_isotype_control_3, 
+                                abundance.day14_isotype_control_4, 
+                                abundance.day14_isotype_control_5)), 
+         day7_treat = mean(c(abundance.day7_immuno_treat_1, 
+                             abundance.day7_immuno_treat_2, 
+                             abundance.day7_immuno_treat_3, 
+                             abundance.day7_immuno_treat_4, 
+                             abundance.day7_immuno_treat_5)), 
+         day7_control = mean(c(abundance.day7_isotype_control_1, 
+                               abundance.day7_isotype_control_2, 
+                               abundance.day7_isotype_control_3, 
+                               abundance.day7_isotype_control_4, 
+                               abundance.day7_isotype_control_5)))
+
+salmon_counts <- salmon_txi %>% 
+  rowwise() %>%
+  mutate(day14_treat = mean(c(counts.day14_immuno_treat_1, 
+                              counts.day14_immuno_treat_2, 
+                              counts.day14_immuno_treat_3, 
+                              counts.day14_immuno_treat_4, 
+                              counts.day14_immuno_treat_5)), 
+         day14_control = mean(c(counts.day14_isotype_control_1, 
+                                counts.day14_isotype_control_2, 
+                                counts.day14_isotype_control_3, 
+                                counts.day14_isotype_control_4, 
+                                counts.day14_isotype_control_5)), 
+         day7_treat = mean(c(counts.day7_immuno_treat_1, 
+                             counts.day7_immuno_treat_2, 
+                             counts.day7_immuno_treat_3, 
+                             counts.day7_immuno_treat_4, 
+                             counts.day7_immuno_treat_5)), 
+         day7_control = mean(c(counts.day7_isotype_control_1, 
+                               counts.day7_isotype_control_2, 
+                               counts.day7_isotype_control_3, 
+                               counts.day7_isotype_control_4, 
+                               counts.day7_isotype_control_5)))
+```
+
+### Abundance: Salmon vs Kallisto
+
+```{r}
+comb_abun <- salmon_abundance %>% full_join(kallisto_abundance, by = 'id', suffix = c('.sal', '.kal'))
+
+g1 <- ggplot(comb_abun, aes(day14_treat.kal , day14_treat.sal)) + geom_point() + geom_smooth(method = 'lm') + 
+  stat_poly_eq(formula = y~x, aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), parse = TRUE) + ylim(0, 10000) + theme_bw()
+g2 <-ggplot(comb_abun, aes(day14_control.kal , day14_control.sal)) + geom_point() + geom_smooth(method = 'lm') + 
+  stat_poly_eq(formula = y~x, aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), parse = TRUE) + ylim(0, 10000) + theme_bw()
+g3 <- ggplot(comb_abun, aes(day7_treat.kal , day7_treat.sal)) + geom_point() + geom_smooth(method = 'lm') + 
+  stat_poly_eq(formula = y~x, aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), parse = TRUE) + ylim(0, 10000)+ theme_bw()
+g4 <-ggplot(comb_abun, aes(day7_control.kal , day7_control.sal)) + geom_point() + geom_smooth(method = 'lm') +
+  stat_poly_eq(formula = y~x, aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), parse = TRUE) + ylim(0, 10000)+ theme_bw()
+
+cowplot::plot_grid(g1, g2, g3, g4)
+```
+
+### Counts: Salmon vs Kallisto
+
+```{r}
+comb_counts <- salmon_counts %>% full_join(kallisto_counts, by = 'id', suffix = c('.sal', '.kal'))
+comb_counts <- comb_counts %>% full_join(hisat_counts, by = 'id')
+
+g1 <- ggplot(comb_counts, aes(day14_treat.kal , day14_treat.sal)) + geom_point() + geom_smooth(method = 'lm') + 
+  stat_poly_eq(formula = y~x, aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), parse = TRUE) + theme_bw()
+g2 <-ggplot(comb_counts, aes(day14_control.kal , day14_control.sal)) + geom_point() + geom_smooth(method = 'lm') + 
+  stat_poly_eq(formula = y~x, aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), parse = TRUE) + theme_bw()
+g3 <- ggplot(comb_counts, aes(day7_treat.kal , day7_treat.sal)) + geom_point() + geom_smooth(method = 'lm') + 
+  stat_poly_eq(formula = y~x, aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), parse = TRUE) + theme_bw()
+g4 <-ggplot(comb_counts, aes(day7_control.kal , day7_control.sal)) + geom_point() + geom_smooth(method = 'lm') +
+  stat_poly_eq(formula = y~x, aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), parse = TRUE) + theme_bw()
+cowplot::plot_grid(g1, g2, g3, g4)
+```
+
+
+### What is similar what is different
+
+### VennDiagram
+
+```{r}
+
+comb <- salmon_count %>% full_join(kallisto_count, by = 'id', suffix = c('.sal', '.kal'))
+
+comb <- comb %>% full_join(hisat_count, by = 'id')  %>% 
+  filter(padj.sal < 0.05 | padj.kal < 0.05 | padj < 0.05, log2FC.kal > 1 | log2FC.kal < -1, log2FC.sal > 1 | log2FC.sal < -1, log2FC > 1 | log2FC < -1)
+
+kal_gene <- kallisto_count %>% filter(padj < 0.05, log2FC > 1 | log2FC < -1) %>% pull(id)
+
+sal_gene <- salmon_count %>% filter(padj < 0.05 , log2FC > 1 | log2FC < -1) %>% pull(id)
+
+hisat_gene <- hisat_count %>% filter(padj < 0.05 , log2FC > 1 | log2FC < -1) %>% pull(id)
+
+venn.diagram(
+  x = list(kal_gene, sal_gene, hisat_gene),
+  category.names = c("Kallisto", "Salmon", "HiSAT2"),
+  filename = 'point05_comparison.png',
+  fill= c("light blue", "pink", "purple"),
+  output=FALSE
+)
+```
+
+###Digging deeper 
+
+```{r}
+sal_kal <- comb %>% filter(padj.sal < 0.05 & padj.kal < 0.05) %>% pull(id)
+
+comb <- comb %>% mutate(Status = case_when(id %in% sal_kal ~ 'Salmon and Kallisto')) 
+
+comb_sig <- salmon_count %>% full_join(kallisto_count, by = 'id', suffix = c('.sal', '.kal')) %>% 
+  filter(padj.sal < 0.05 & padj.kal < 0.05, log2FC.kal > 1 | log2FC.kal < -1, log2FC.sal > 1 | log2FC.sal < -1) %>%
+  mutate(Status = case_when(id %in% sal_kal ~ 'Salmon and Kallisto')) 
+
+ggplot(comb, aes(log2FC.sal, log2FC.kal, color = Status)) + geom_point()
+
+ggplot(comb, aes(padj.sal, padj.kal, color = Status)) + geom_point()
+
+ggplot(comb_sig, aes(padj.sal, padj.kal)) + geom_point() + geom_smooth(method = 'lm') + 
+  stat_poly_eq(formula = y~x, aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), parse = TRUE)
+
+ggplot(comb_sig, aes(log2FC.sal, log2FC.kal)) + geom_point(col = 'black', alpha = 0.5) + geom_smooth(method = 'lm') + 
+  stat_poly_eq(formula = y~x, 
+                aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), 
+                parse = TRUE)
+```
+
+
+```{r}
+sal_kal <- comb %>% filter(padj.sal < 0.05 & padj.kal < 0.05) %>% pull(id)
+
+all <- comb %>% filter(padj.sal < 0.05 & padj.kal < 0.05 & padj < 0.05) %>% pull(id)
+
+comb <- comb %>% mutate(Status = case_when(id %in% all ~ 'All')) 
+
+comb_sig <- salmon_count %>% full_join(kallisto_count, by = 'id', suffix = c('.sal', '.kal')) %>% 
+  full_join(hisat_count, by = 'id') %>%
+  filter(padj.sal < 0.05 & padj.kal < 0.05 & padj < 0.05, log2FC.kal > 1 | log2FC.kal < -1, log2FC.sal > 1 | log2FC.sal < -1, log2FC > 1 | log2FC < -1) %>%
+  mutate(Status = case_when(id %in% all ~ 'All')) 
+
+ggplot(comb, aes(log2FC.sal, log2FC.kal, color = Status)) + geom_point()
+ggplot(comb, aes(padj.sal, padj.kal, color = Status)) + geom_point()
+
+ggplot(comb, aes(log2FC.sal, log2FC, color = Status)) + geom_point()
+ggplot(comb, aes(padj, padj.sal, color = Status)) + geom_point()
+
+ggplot(comb, aes(log2FC.kal, log2FC, color = Status)) + geom_point()
+ggplot(comb, aes(padj.kal, padj, color = Status)) + geom_point()
+
+ggplot(comb_sig, aes(padj.sal, padj.kal)) + geom_point() + geom_smooth(method = 'lm') + 
+  stat_poly_eq(formula = y~x, aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), parse = TRUE)
+
+ggplot(comb_sig, aes(padj.sal, padj)) + geom_point() + geom_smooth(method = 'lm') + 
+  stat_poly_eq(formula = y~x, aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), parse = TRUE)
+
+ggplot(comb_sig, aes(padj.kal, padj)) + geom_point() + geom_smooth(method = 'lm') + 
+  stat_poly_eq(formula = y~x, aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), parse = TRUE)
+
+ggplot(comb_sig, aes(log2FC.sal, log2FC.kal)) + geom_point(col = 'black', alpha = 0.5) + geom_smooth(method = 'lm') + 
+  stat_poly_eq(formula = y~x, 
+                aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), 
+                parse = TRUE)
+
+ggplot(comb_sig, aes(log2FC.sal, log2FC)) + geom_point(col = 'black', alpha = 0.5) + geom_smooth(method = 'lm') + 
+  stat_poly_eq(formula = y~x, 
+                aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), 
+                parse = TRUE)
+
+ggplot(comb_sig, aes(log2FC.kal, log2FC)) + geom_point(col = 'black', alpha = 0.5) + geom_smooth(method = 'lm') + 
+  stat_poly_eq(formula = y~x, 
+                aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), 
+                parse = TRUE)
+```

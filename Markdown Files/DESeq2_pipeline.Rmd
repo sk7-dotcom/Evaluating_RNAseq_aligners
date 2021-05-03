@@ -1,0 +1,297 @@
+---
+title: "DESeq2_pipeline"
+author: "Sreedevi Kesavan"
+date: "25/04/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### Library Install
+
+```{r eval=FALSE}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("DESeq2")
+BiocManager::install("edgeR")
+BiocManager::install("limma")
+BiocManager::install("tximport")
+BiocManager::install("tximportData") # this is relatively big
+BiocManager::install("tximeta")
+BiocManager::install("GenomeInfoDb")
+BiocManager::install("org.Dm.eg.db")
+BiocManager::install("TxDb.Mmusculus.UCSC.mm10.ensGene")
+BiocManager::install("rhdf5")
+BiocManager::install("Rsubread")
+```
+
+```{r warning=FALSE, message=FALSE, output=FALSE}
+library(TxDb.Mmusculus.UCSC.mm10.ensGene)
+library(DESeq2)
+library(tximport)
+library(readr)
+library(RColorBrewer)
+library(gplots)
+library(rhdf5)
+library(Rsubread)
+library(tidyverse)
+library(biomaRt)
+```
+
+
+#### Loading Mouse gene set
+
+```{r warning=FALSE message=FALSE output=FALSE}
+txdb <- TxDb.Mmusculus.UCSC.mm10.ensGene
+k <- keys(txdb, keytype = "TXNAME")
+tx2gene <- select(x = txdb, keys = k, "GENEID", "TXNAME")
+head(tx2gene)
+```
+
+### Counting HiSAT2 data with featurCounts 
+
+```{r}
+
+bam_files <- file.path("bam_filter", list.files("bam_filter"))
+# check that the files actually exist. Should return TRUE for each file
+file.exists(bam_files)
+# Let's take a look at this variable we have created
+bam_files
+
+str_counts <- featureCounts(bam_files, annot.ext = 'mm10.ref.gtf', isGTFAnnotationFile = TRUE, GTF.featureType = 'gene', GTF.attrType = 'gene_id', countMultiMappingReads = TRUE)
+
+write.csv(str_counts[["counts"]], 'str_counts.csv')
+
+countData <- read.csv('str_count.csv', header = TRUE)
+
+countName <- c("id",
+             "day14_immuno_treat_1", 
+             "day14_immuno_treat_2", 
+             "day14_immuno_treat_3",
+             "day14_immuno_treat_4", 
+             "day14_immuno_treat_5", 
+             "day14_isotype_control_1", 
+             "day14_isotype_control_2",
+             "day14_isotype_control_3", 
+             "day14_isotype_control_4",
+             "day14_isotype_control_5",
+             "day7_immuno_treat_1", 
+             "day7_immuno_treat_2", 
+             "day7_immuno_treat_3",
+             "day7_immuno_treat_4", 
+             "day7_immuno_treat_5", 
+             "day7_isotype_control_1", 
+             "day7_isotype_control_2",
+             "day7_isotype_control_3", 
+             "day7_isotype_control_4",
+             "day7_isotype_control_5")
+names(countData) <- countName
+countData$id <- gsub("\\..*", "",countData$id)
+
+# Experimental Setup
+
+Sample <- c("day14_immuno_treat_1", 
+             "day14_immuno_treat_2", 
+             "day14_immuno_treat_3",
+             "day14_immuno_treat_4", 
+             "day14_immuno_treat_5", 
+             "day14_isotype_control_1", 
+             "day14_isotype_control_2",
+             "day14_isotype_control_3", 
+             "day14_isotype_control_4",
+             "day14_isotype_control_5",
+             "day7_immuno_treat_1", 
+             "day7_immuno_treat_2", 
+             "day7_immuno_treat_3",
+             "day7_immuno_treat_4", 
+             "day7_immuno_treat_5", 
+             "day7_isotype_control_1", 
+             "day7_isotype_control_2",
+             "day7_isotype_control_3", 
+             "day7_isotype_control_4",
+             "day7_isotype_control_5")
+
+dpi <- c(rep(14, 10), rep(7, 10))
+condition <- c(rep('Treatment', 5), rep('Control', 5), rep('Treatment', 5), rep('Control', 5))
+
+group <- c("day14_treat", 
+             "day14_treat", 
+             "day14_treat",
+             "day14_treat", 
+             "day14_treat", 
+             "day14_control", 
+             "day14_control",
+             "day14_control", 
+             "day14_control",
+             "day14_control",
+             "day7_treat", 
+             "day7_treat", 
+             "day7_treat",
+             "day7_treat", 
+             "day7_treat", 
+             "day7_control", 
+             "day7_control",
+             "day7_control", 
+             "day7_control",
+             "day7_control")
+metaData<- cbind(Sample, dpi, condition, group)
+
+dds <- DESeqDataSetFromMatrix(countData=countData, 
+                              colData=metaData, 
+                              design=~group, tidy = TRUE)
+
+dds$group <- relevel(dds$group, ref = "day7_control")
+hisat_final <- DESeq(dds)
+
+hisat_day7_comp <- results(hisat_final, contrast = list('group_day7_treat_vs_day7_control'),
+  independentFiltering=TRUE, alpha=0.05, pAdjustMethod="BH", parallel=TRUE)
+
+# dds$group <- relevel(dds$group, ref = "day14_control")
+# hisat_final <- DESeq(dds)
+# 
+# hisat_day14_comp <- results(hisat_final, contrast = list('group_day14_treat_vs_day14_control'),
+#   independentFiltering=TRUE, alpha=0.05, pAdjustMethod="BH", parallel=TRUE)
+
+# write.csv(hisat_day14_comp, "hisat_day14.csv")
+write.csv(hisat_day7_comp, "hisat_day7.csv")
+
+```
+
+#### Data download Salmon and Kallisto 
+
+```{r warning=FALSE message=FALSE output=FALSE}
+
+# Salmon quants ----
+
+quant_files <- file.path("salmon_counts", list.files("salmon_counts"), "quant.sf")
+# check that the files actually exist. Should return TRUE for each file
+file.exists(quant_files)
+# Let's take a look at this variable we have created
+quant_files
+
+txi_salmon <- tximport(quant_files, 
+                type = "salmon", tx2gene = tx2gene)
+
+```
+
+```{r warning=FALSE message=FALSE output=FALSE}
+kal_files <- file.path("kallisto_counts", list.files("Analysis Output/kallisto_counts"), "abundance.tsv")
+# check that the files actually exist. Should return TRUE for each file
+file.exists(kal_files)
+# Let's take a look at this variable we have created
+kal_files
+
+txi_kallisto <- tximport(kal_files, 
+                type = "kallisto", tx2gene = tx2gene)
+```
+
+```{r warning=FALSE message=FALSE output=FALSE}
+# Names of samples.
+samples <- c("day14_immuno_treat_1", 
+             "day14_immuno_treat_2", 
+             "day14_immuno_treat_3",
+             "day14_immuno_treat_4", 
+             "day14_immuno_treat_5", 
+             "day14_isotype_control_1", 
+             "day14_isotype_control_2",
+             "day14_isotype_control_3", 
+             "day14_isotype_control_4",
+             "day14_isotype_control_5",
+             "day7_immuno_treat_1", 
+             "day7_immuno_treat_2", 
+             "day7_immuno_treat_3",
+             "day7_immuno_treat_4", 
+             "day7_immuno_treat_5", 
+             "day7_isotype_control_1", 
+             "day7_isotype_control_2",
+             "day7_isotype_control_3", 
+             "day7_isotype_control_4",
+             "day7_isotype_control_5")
+names(quant_files) <- samples
+names(kal_files) <- samples
+```
+
+#### Experimental Design Salmon 
+
+```{r warning=FALSE message=FALSE output=FALSE}
+rna.design <- data.frame(sample=samples,
+  file=quant_files,
+  dpi=dpi,
+  condition=condition, 
+  group=group)
+rna.design.2 <- data.frame(sample=samples,
+  file=quant_files,
+  dpi=dpi,
+  condition=condition)
+
+load.model<- model.matrix(~group)
+
+model_salmon <- DESeqDataSetFromTximport(txi_salmon,
+  rna.design, design=load.model)
+
+out_salmon <- DESeq(model_salmon)
+
+resultsNames(out_salmon)
+salmon_day7_comp <- results(out_salmon, contrast = list('groupday7_control', 'groupday7_treat'),
+  independentFiltering=TRUE, alpha=0.05, pAdjustMethod="BH", parallel=TRUE)
+
+# rna.design$group <- factor(rna.design$group, levels=c('day14_control', 'day14_treat', 'day7_control', 'day7_treat'))
+# model_salmon <- DESeqDataSetFromTximport(txi_salmon,
+#   rna.design, design=load.model)
+# out_salmon <- DESeq(model_salmon)
+# resultsNames(out_salmon)
+# salmon_day14_comp <- results(out_salmon, contrast = list('groupday14_control', 'groupday14_treat'),
+#   independentFiltering=TRUE, alpha=0.05, pAdjustMethod="BH", parallel=TRUE)
+
+# write.csv(salmon_day14_comp, "salmon_day14.csv")
+write.csv(salmon_day7_comp, "salmon_day7.csv")
+
+```
+
+#### Experimental Design Kallisto
+
+```{r warning=FALSE message=FALSE output=FALSE}
+rna.design <- data.frame(sample=samples,
+  file=kal_files,
+  dpi=dpi,
+  condition=condition, 
+  group=group)
+
+load.model<- model.matrix(~group)
+
+model_kal <- DESeqDataSetFromTximport(txi_kallisto,
+  rna.design, design=load.model)
+
+out_kal <- DESeq(model_kal)
+
+resultsNames(out_kal)
+
+kal_day7_comp <- results(out_kal, contrast = list('groupday7_control', 'groupday7_treat'),
+  independentFiltering=TRUE, alpha=0.05, pAdjustMethod="BH", parallel=TRUE)
+
+# rna.design$group <- factor(rna.design$group, levels=c('day14_control', 'day14_treat', 'day7_control', 'day7_treat'))
+# model_kal <- DESeqDataSetFromTximport(txi_salmon,
+#   rna.design, design=load.model)
+# out_kal <- DESeq(model_kal)
+# resultsNames(out_salmon)
+# kal_day14_comp <- results(out_kal, contrast = list('groupday14_control', 'groupday14_treat'),
+#   independentFiltering=TRUE, alpha=0.05, pAdjustMethod="BH", parallel=TRUE)
+
+# write.csv(kal_day14_comp, "kal_day14.csv")
+write.csv(kal_day7_comp, "kal_day7.csv")
+
+```
+
+
+```{r}
+par(mfrow = c(3,1))
+k <- plotMA(kal_day7_comp) + title('Kallisto')
+s <- plotMA(salmon_day7_comp) + title('Salmon')
+h <- plotMA(hisat_day7_comp) + title('HISAT2')
+
+```
+
+
+

@@ -1,0 +1,293 @@
+---
+title: "Count_generation"
+author: "Sreedevi Kesavan"
+date: "18/04/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Everthing here was run on the terminal.
+
+## Data download 
+
+```{bash}
+
+cd ~/fin_proj/raw_data
+
+#!/usr/bin/env bash
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/001/ERR3219281/ERR3219281.fastq.gz -o day7_isotype_control_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/004/ERR3219284/ERR3219284.fastq.gz -o day7_isotype_control_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/005/ERR3219285/ERR3219285.fastq.gz -o day7_isotype_control_3.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/007/ERR3219287/ERR3219287.fastq.gz -o day7_immuno_treat_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/006/ERR3219286/ERR3219286.fastq.gz -o day7_immuno_treat_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/003/ERR3219283/ERR3219283.fastq.gz -o day7_isotype_control_4.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/002/ERR3219292/ERR3219292.fastq.gz -o day14_isotype_control_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/008/ERR3219288/ERR3219288.fastq.gz -o day7_immuno_treat_3.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/009/ERR3219289/ERR3219289.fastq.gz -o day7_immuno_treat_4.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/001/ERR3219291/ERR3219291.fastq.gz -o day14_isotype_control_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/000/ERR3219290/ERR3219290.fastq.gz -o day7_immuno_treat_5.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/002/ERR3219282/ERR3219282.fastq.gz -o day7_isotype_control_5.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/004/ERR3219294/ERR3219294.fastq.gz -o day14_isotype_control_3.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/005/ERR3219295/ERR3219295.fastq.gz -o day14_isotype_control_4.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/006/ERR3219296/ERR3219296.fastq.gz -o day14_immuno_treat_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/008/ERR3219298/ERR3219298.fastq.gz -o day14_immuno_treat_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/003/ERR3219293/ERR3219293.fastq.gz -o day14_isotype_control_5.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/007/ERR3219297/ERR3219297.fastq.gz -o day14_immuno_treat_3.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/000/ERR3219300/ERR3219300.fastq.gz -o day14_immuno_treat_4.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR321/009/ERR3219299/ERR3219299.fastq.gz -o day14_immuno_treat_5.fastq.gz
+
+```
+
+## Reference download
+
+```{bash}
+
+cd ~/fin_proj/ref
+
+#!/usr/bin/env bash
+curl -L ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M26/gencode.vM26.annotation.gtf.gz -o mm10.ref.gtf.gz
+curl -L ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M26/GRCm39.primary_assembly.genome.fa.gz -o mm10.ref.fa.gz
+curl -L ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M26/gencode.vM26.annotation.gff3.gz -o mm10.ref.gff3.gz
+curl -L ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M26/gencode.vM26.transcripts.fa.gz -o mm10.transcript.fa.gz
+
+```
+
+## Unzipping FastQ.gz files 
+
+```{bash}
+
+gunzip ~/fin_proj/raw_data/*.fastq.gz
+
+```
+
+
+## FastQC 
+
+```{bash}
+
+fastqc ~/fin_proj/raw_data/*.fastq -o ~/fin_proj/fastqc1
+```
+
+## Salmon 
+
+### Index Generation 
+
+```{bash}
+
+cd ~/fin_proj/salmon_index
+
+salmon index -t ~/fin_proj/ref/new_set/mm10.transcript.fa -i ~/fin_proj/salmon_index
+```
+
+### Salmon Counts 
+
+```{bash}
+
+#!/usr/bin/env bash
+
+index_dir=~/fin_proj/salmon_index
+sample_dir=~/fin_proj/raw_data
+sample_files=(${sample_dir}/*.fastq)
+out_dir=~/fin_proj/salmon_counts
+
+for a in ${sample_files[@]}
+do
+
+name=${a}
+base=`basename ${name} .fastq`
+salmon quant -i ${index_dir} -l A \
+  -r ${sample_dir}/${base}.fastq \
+  -p 16 --validateMappings --rangeFactorizationBins 4 \
+  --seqBias --gcBias \
+  -o ${out_dir}/${base}_quant
+done
+
+```
+
+### Version Stripping 
+
+```{bash}
+#!/usr/bin/env bash
+
+sample_dir=~/fin_proj/salmon_counts/
+quant_files=(${sample_dir}/*_quant)
+
+
+for a in ${quant_files[@]}
+do
+
+awk -F'\t' '{sub(/\..+$/,"",$1)}1' OFS='\t' ${a}/quant.sf > ${a}/temp_file.txt && mv ${a}/temp_file.txt ${a}/quant.sf
+
+done
+
+```
+
+
+## Kallisto 
+
+### Index Generation 
+
+```{bash}
+
+cd ~/fin_proj/kallisto
+
+#!/usr/bin/env bash
+
+kallisto index -i kal_index ~/fin_proj/ref/new_set/mm10.transcript.fa
+
+```
+
+### Kallisto Counts 
+
+```{bash}
+#!/usr/bin/env bash
+
+sample_dir=~/fin_proj/raw_data
+sample_files=${sample_dir}/*.fastq
+index_dir=~/fin_proj/kallisto/kal_index
+out_dir=~/fin_proj/kallisto_counts
+
+for file in ${sample_files[@]}
+do
+
+name=${file}
+basename=`basename ${name} .fastq`
+
+kallisto quant -i ${index_dir} -o ${out_dir}/${basename} ${sample_dir}/${basename}.fastq \
+--single -l 200 -s 20 -t 16
+done
+
+
+```
+
+### Version stripping 
+
+```{bash}
+#!/usr/bin/env bash
+
+sample_dir=~/fin_proj/kallisto_counts/
+quant_files=(${sample_dir}/day*)
+
+
+for a in ${quant_files[@]}
+do
+
+awk -F'\t' '{sub(/\..+$/,"",$1)}1' OFS='\t' ${a}/abundance.tsv > ${a}/temp_file.txt 
+&& mv ${a}/temp_file.txt ${a}/abundance.tsv
+
+done
+
+```
+
+## HiSAT2 and Stringtie
+
+### Index generation 
+
+```{bash}
+
+cd ~/fin_proj/hisat_index 
+
+#!/usr/bin/env bash
+
+/usr/local/hisat/hisat2-build -f ~/fin_proj/ref/new_set/mm10.ref.fa mm10
+```
+
+### Alignment 
+
+```{bash}
+#!/usr/bin/env bash
+
+sdir=~/fin_proj/raw_data
+out_dir=~/fin_proj/hisat_counts/sam_out
+
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day7_isotype_control_1.fastq -S ${out_dir}/day7_control1.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day7_isotype_control_2.fastq -S ${out_dir}/day7_control2.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day7_isotype_control_3.fastq -S ${out_dir}/day7_control3.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day7_isotype_control_4.fastq -S ${out_dir}/day7_control4.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day7_isotype_control_5.fastq -S ${out_dir}/day7_control5.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day14_isotype_control_1.fastq -S ${out_dir}/day14_control1.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day14_isotype_control_2.fastq -S ${out_dir}/day14_control2.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day14_isotype_control_3.fastq -S ${out_dir}/day14_control3.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day14_isotype_control_4.fastq -S ${out_dir}/day14_control4.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day14_isotype_control_5.fastq -S ${out_dir}/day14_control5.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day7_immuno_treat_1.fastq -S ${out_dir}/day7_treat1.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day7_immuno_treat_2.fastq -S ${out_dir}/day7_treat2.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day7_immuno_treat_3.fastq -S ${out_dir}/day7_treat3.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day7_immuno_treat_4.fastq -S ${out_dir}/day7_treat4.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day7_immuno_treat_5.fastq -S ${out_dir}/day7_treat5.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day14_immuno_treat_1.fastq -S ${out_dir}/day14_treat1.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day14_immuno_treat_2.fastq -S ${out_dir}/day14_treat2.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day14_immuno_treat_3.fastq -S ${out_dir}/day14_treat3.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day14_immuno_treat_4.fastq -S ${out_dir}/day14_treat4.sam
+/usr/local/hisat/hisat2 -p 8 -q -x mm10 -U ${sdir}/day14_immuno_treat_5.fastq -S ${out_dir}/day14_treat5.sam
+
+```
+
+### SAM to BAM 
+
+```{bash}
+#!/usr/bin/env bash
+sam_dir=~/fin_proj/hisat_counts/sam_out
+sam_files=~/fin_proj/hisat_counts/sam_out/*.sam
+bam_dir=~/fin_proj/hisat_counts/bam_out
+
+for file in ${sam_files[@]}
+do
+
+name=${file}
+base=`basename ${name} .sam`
+
+samtools view -b -S ${sam_dir}/${base}.sam > ${bam_dir}/${base}.bam
+
+done
+```
+
+### Sort BAM files 
+
+```{bash}
+#!/usr/bin/env bash
+
+bam_dir=~/fin_proj/hisat_counts/bam_out
+bam_files=${bam_dir}/*.bam
+bam_sort=~/fin_proj/hisat_counts/bam_sort
+
+for file in ${bam_files[@]}
+do
+
+name=${file}
+base=`basename ${name} .bam`
+
+samtools sort -o ${bam_sort}/${base}.bam ${bam_dir}/${base}.bam
+samtools index -b ${bam_sort}/${base}.bam ${bam_sort}/${base}.bam.bai
+
+done
+
+```
+
+### Filter BAM files
+
+```{bash}
+
+#!/usr/bin/env bash
+
+in_dir=~/fin_proj/hisat_counts/bam_sort
+in_file=${in_dir}/*.bam
+out_dir=~/fin_proj/hisat_counts/bam_filter
+
+for file in ${in_file[@]}
+do
+
+name=${file}
+base=`basename ${name} .bam`
+
+samtools view -b -q 40 -o ${out_dir}/${base}.bam ${in_dir}/${base}.bam
+
+done
+```
+
+
+
+

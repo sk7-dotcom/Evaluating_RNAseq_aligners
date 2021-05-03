@@ -1,0 +1,2283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAMPLE_SET>
+<SAMPLE accession="ERS3223582" alias="E-MTAB-7777:IO1736_4-35" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223582</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418285</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_4-35</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_4-35</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246763</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219282</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223582&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223582&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>24629529</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1231476450</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223598" alias="E-MTAB-7777:IO1736_9-86" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223598</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418301</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_9-86</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_9-86</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246779</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219298</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223598&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223598&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>25420364</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1271018200</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223597" alias="E-MTAB-7777:IO1736_9-84" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223597</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418300</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_9-84</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_9-84</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246778</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219297</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223597&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223597&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>28066716</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1403335800</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223587" alias="E-MTAB-7777:IO1736_5-43" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223587</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418290</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_5-43</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_5-43</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246768</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219287</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223587&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223587&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>22898302</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1144915100</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223600" alias="E-MTAB-7777:IO1736_9-89" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223600</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418303</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_9-89</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_9-89</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246781</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219300</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223600&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223600&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>24868741</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1243437050</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223581" alias="E-MTAB-7777:IO1736_4-31" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223581</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418284</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_4-31</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_4-31</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246762</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219281</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223581&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223581&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>23447317</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1172365850</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223589" alias="E-MTAB-7777:IO1736_5-48" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223589</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418292</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_5-48</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_5-48</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246770</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219289</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223589&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223589&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>19180921</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>959046050</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223595" alias="E-MTAB-7777:IO1736_8-80" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223595</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418298</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_8-80</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_8-80</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246776</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219295</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223595&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223595&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>27543640</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1377182000</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223585" alias="E-MTAB-7777:IO1736_4-40" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223585</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418288</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_4-40</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_4-40</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246766</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219285</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223585&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223585&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>28096265</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1404813250</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223593" alias="E-MTAB-7777:IO1736_8-76" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223593</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418296</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_8-76</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_8-76</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246774</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219293</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223593&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223593&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>18101915</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>905095750</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223590" alias="E-MTAB-7777:IO1736_5-50" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223590</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418293</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_5-50</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_5-50</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246771</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219290</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223590&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223590&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>34628115</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1731405750</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223596" alias="E-MTAB-7777:IO1736_9-82" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223596</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418299</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_9-82</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_9-82</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246777</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219296</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223596&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223596&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>31401635</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1570081750</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223594" alias="E-MTAB-7777:IO1736_8-77" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223594</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418297</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_8-77</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_8-77</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246775</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219294</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223594&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223594&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>23407476</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1170373800</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223588" alias="E-MTAB-7777:IO1736_5-46" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223588</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418291</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_5-46</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_5-46</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246769</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219288</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223588&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223588&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>22523528</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1126176400</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223584" alias="E-MTAB-7777:IO1736_4-38" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223584</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418287</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_4-38</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_4-38</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246765</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219284</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223584&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223584&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>32140420</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1607021000</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223592" alias="E-MTAB-7777:IO1736_8-75" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223592</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418295</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_8-75</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_8-75</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246773</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219292</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223592&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223592&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>28879620</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1443981000</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223586" alias="E-MTAB-7777:IO1736_5-42" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223586</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418289</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_5-42</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_5-42</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246767</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219286</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223586&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223586&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>26160876</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1308043800</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223583" alias="E-MTAB-7777:IO1736_4-36" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223583</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418286</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_4-36</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_4-36</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246764</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219283</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223583&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223583&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>27522502</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1376125100</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223591" alias="E-MTAB-7777:IO1736_8-72" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223591</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418294</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_8-72</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_8-72</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246772</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219291</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223591&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223591&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>24082341</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1204117050</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+<SAMPLE accession="ERS3223599" alias="E-MTAB-7777:IO1736_9-87" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERS3223599</PRIMARY_ID>
+          <EXTERNAL_ID namespace="BioSample">SAMEA5418302</EXTERNAL_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777:IO1736_9-87</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>IO1736_9-87</TITLE>
+     <SAMPLE_NAME>
+          <TAXON_ID>10090</TAXON_ID>
+          <SCIENTIFIC_NAME>Mus musculus</SCIENTIFIC_NAME>
+          <COMMON_NAME>house mouse</COMMON_NAME>
+     </SAMPLE_NAME>
+     <DESCRIPTION>Protocols: CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.   For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher). TrueSeq stranded mRNA library preparation.</DESCRIPTION>
+     <SAMPLE_LINKS>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-STUDY</DB>
+                    <ID>ERP114266</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246780</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219299</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223599&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+          <SAMPLE_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERS3223599&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </SAMPLE_LINK>
+     </SAMPLE_LINKS>
+     <SAMPLE_ATTRIBUTES>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>isolate</TAG>
+               <VALUE>not applicable</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism</TAG>
+               <VALUE>Mus musculus</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>strain</TAG>
+               <VALUE>BALB/c</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sex</TAG>
+               <VALUE>female</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>developmental stage</TAG>
+               <VALUE>adult</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>genotype</TAG>
+               <VALUE>wild type genotype</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>organism part</TAG>
+               <VALUE>colon</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>sampling site</TAG>
+               <VALUE>neoplasm</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>growth condition</TAG>
+               <VALUE>transplanted with CT-26.WT (5x10^5 cells/mouse) tumor cells</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>disease</TAG>
+               <VALUE>carcinoma</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-CHECKLIST</TAG>
+               <VALUE>ERC000011</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>26438144</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1321907200</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </SAMPLE_ATTRIBUTE>
+          <SAMPLE_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </SAMPLE_ATTRIBUTE>
+     </SAMPLE_ATTRIBUTES>
+</SAMPLE>
+</SAMPLE_SET>

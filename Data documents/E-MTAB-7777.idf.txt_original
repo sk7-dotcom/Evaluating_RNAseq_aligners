@@ -1,0 +1,46 @@
+Comment[ArrayExpressAccession]	E-MTAB-7777
+MAGE-TAB Version	1.1
+Comment[Submitted Name]	RNAseq of tumor samples from CT26 syngeneic mouse treated with a PD-L1 and CTLA-4 immunotherapy combination			
+Investigation Title	RNAseq of tumor samples from CT26 syngeneic mouse treated with a PD-L1 and CTLA-4 immunotherapy combination
+Experiment Description	The ability to modulate immune-inhibitory pathways using checkpoint blockade antibodies such as PD-1, PD-L1, and CTLA-4 represents a significant breakthrough in cancer therapy in recent years. This has driven interest in identifying small-molecule-immunotherapy combinations to increase the proportion of responses. Murine syngeneic models, which have a functional immune system, represent an essential tool for pre-clinical evaluation of new immunotherapies.  However, immune response varies widely between models and the translational relevance of each model is not fully understood, making selection of an appropriate pre-clinical model for drug target validation challenging. Utilizing RNAseq transcriptomic profiling, we have characterised the changes in gene regulatory pathways and immune populations in CT26 mice after treatment with the combination of anti-PD-L1 and anti-CTLA-4 antibodies. At day 7 post tumor implant, the pathways analysis of differentially expressed genes indicated an enrichment for migration of leukocytes in response to inflammation and communication between innate and adaptive immune cells. Similarly, analysis of upstream regulators suggested that lipopolysaccharide, IL-1B, TNF, IFNG, and NFKB1A pathways associated with inflammation were activated. At day 14, pathways related T-helper cell signalling pathways were upregulated. In addition, upstream regulators of the lipopolysaccharide and IFNG pathway, as well STAT1 and IL21 pathway were enriched, indicative of innate and adaptive immune response to inflammation.
+Experimental Design	compound treatment design
+Experimental Design Term Source REF	EFO
+Experimental Design Term Accession Number	EFO:0001755
+Experimental Factor Name	compound	dose	time
+Experimental Factor Type	compound	dose	time
+Experimental Factor Term Source REF	EFO	EFO	EFO
+Experimental Factor Term Accession Number	CHEBI_24431	EFO_0000428	EFO_0000721
+Person Last Name	Coenen-Stass
+Person First Name	Anna
+Person Mid Initials
+Person Email	anna.coenenstass@gmail.com
+Person Phone
+Person Fax
+Person Address	Bioscience, Oncology, IMED Biotech Unit, AstraZeneca, Cambridge, UK
+Person Affiliation	AstraZeneca
+Person Roles	submitter
+Date of Experiment	2018-06-01
+Public Release Date	2020-06-01
+PubMed ID
+Publication DOI
+Publication Author List	Molly A. Taylor, Adina M. Hughes, Josephine Walton, Anna Conen-Stass, Lorraine Mooney, Sigourney Bell, Anna D. Staniszewska, Linda C. Sandin, Simon Barry, Amanda Watkins, Larissa S. Carnevalli, Elizabeth L. Hardaker
+Publication Title	Longitudinal Immune Characterization of syngeneic tumor models to enable model selection for immune oncology drug discovery
+Publication Status	in preparation
+Publication Status Term Source REF	EFO
+Publication Status Term Accession Number	EFO_0001795
+Protocol Name	P-MTAB-84192	P-MTAB-84193	P-MTAB-84194	P-MTAB-84195
+Protocol Type	sample collection protocol	nucleic acid extraction protocol	nucleic acid library construction protocol	nucleic acid sequencing protocol
+Protocol Term Source REF	EFO	EFO	EFO	EFO
+Protocol Term Accession Number	EFO_0005518	EFO_0002944	EFO_0004184	EFO_0004170
+Protocol Description	CT-26.WT (5x10^5 cells/mouse) tumor cells were implanted subcutaneously (s.c.) in the left flank of female Balb/c. Mice were injected intraperitoneally with 10mg/kg of either anti-PD-L1 (mouse IgG1, clone D265A; MedImmune) and 10mg/kg anti-CTLA-4 (mouse IgG1, clone 9D9; MedImmune) or the respective isotype controls (αNIP; MedImmune). Antibodies were administered IP Day 3, 7, 10, 14  Tumor samples were harvested 7 or 14 days after cell implantation respectively.  	For RNA sequencing, total RNA was extracted using the RNeasy 96 Qiacube HT Kit (Qiagen), quality validated using nanodrop and Quantit RNA Assay Kit (Thermo Fisher).	TrueSeq stranded mRNA library preparation.	HiSeq4000 System, 50bp single end.
+Protocol Hardware				Illumina HiSeq 4000
+Protocol Software
+Term Source Name	EFO
+Term Source File	http://www.ebi.ac.uk/efo/
+Term Source Version
+Comment[TemplateType]	Animal - High-throughput sequencing
+Comment[AEExperimentType]	RNA-seq of coding RNA
+Comment[RelatedExperiment]	E-MTAB-7386
+Comment[SecondaryAccession]	ERP114266
+Comment[SequenceDataURI]	http://www.ebi.ac.uk/ena/data/view/ERR3219281-ERR3219300
+SDRF File	E-MTAB-7777.sdrf.txt

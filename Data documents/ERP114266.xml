@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STUDY_SET>
+<STUDY accession="ERP114266" alias="E-MTAB-7777" broker_name="ArrayExpress" center_name="AstraZeneca">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERP114266</PRIMARY_ID>
+          <SECONDARY_ID>PRJEB31682</SECONDARY_ID>
+          <SUBMITTER_ID namespace="AstraZeneca">E-MTAB-7777</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <DESCRIPTOR>
+          <STUDY_TITLE>RNAseq of tumor samples from CT26 syngeneic mouse treated with a PD-L1 and CTLA-4 immunotherapy combination</STUDY_TITLE>
+          <STUDY_TYPE existing_study_type="RNASeq"/>
+          <STUDY_ABSTRACT>The ability to modulate immune-inhibitory pathways using checkpoint blockade antibodies such as PD-1, PD-L1, and CTLA-4 represents a significant breakthrough in cancer therapy in recent years. This has driven interest in identifying small-molecule-immunotherapy combinations to increase the proportion of responses. Murine syngeneic models, which have a functional immune system, represent an essential tool for pre-clinical evaluation of new immunotherapies.  However, immune response varies widely between models and the translational relevance of each model is not fully understood, making selection of an appropriate pre-clinical model for drug target validation challenging. Utilizing RNAseq transcriptomic profiling, we have characterised the changes in gene regulatory pathways and immune populations in CT26 mice after treatment with the combination of anti-PD-L1 and anti-CTLA-4 antibodies. At day 7 post tumor implant, the pathways analysis of differentially expressed genes indicated an enrichment for migration of leukocytes in response to inflammation and communication between innate and adaptive immune cells. Similarly, analysis of upstream regulators suggested that lipopolysaccharide, IL-1B, TNF, IFNG, and NFKB1A pathways associated with inflammation were activated. At day 14, pathways related T-helper cell signalling pathways were upregulated. In addition, upstream regulators of the lipopolysaccharide and IFNG pathway, as well STAT1 and IL21 pathway were enriched, indicative of innate and adaptive immune response to inflammation.</STUDY_ABSTRACT>
+          <CENTER_PROJECT_NAME>RNAseq of tumor samples from CT26 syngeneic mouse treated with a PD-L1 and CTLA-4 immunotherapy combination</CENTER_PROJECT_NAME>
+          <STUDY_DESCRIPTION>The ability to modulate immune-inhibitory pathways using checkpoint blockade antibodies such as PD-1, PD-L1, and CTLA-4 represents a significant breakthrough in cancer therapy in recent years. This has driven interest in identifying small-molecule-immunotherapy combinations to increase the proportion of responses. Murine syngeneic models, which have a functional immune system, represent an essential tool for pre-clinical evaluation of new immunotherapies.  However, immune response varies widely between models and the translational relevance of each model is not fully understood, making selection of an appropriate pre-clinical model for drug target validation challenging. Utilizing RNAseq transcriptomic profiling, we have characterised the changes in gene regulatory pathways and immune populations in CT26 mice after treatment with the combination of anti-PD-L1 and anti-CTLA-4 antibodies. At day 7 post tumor implant, the pathways analysis of differentially expressed genes indicated an enrichment for migration of leukocytes in response to inflammation and communication between innate and adaptive immune cells. Similarly, analysis of upstream regulators suggested that lipopolysaccharide, IL-1B, TNF, IFNG, and NFKB1A pathways associated with inflammation were activated. At day 14, pathways related T-helper cell signalling pathways were upregulated. In addition, upstream regulators of the lipopolysaccharide and IFNG pathway, as well STAT1 and IL21 pathway were enriched, indicative of innate and adaptive immune response to inflammation.</STUDY_DESCRIPTION>
+     </DESCRIPTOR>
+     <STUDY_LINKS>
+          <STUDY_LINK>
+               <URL_LINK>
+                    <LABEL>E-MTAB-7777 in ArrayExpress</LABEL>
+                    <URL>http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-7777</URL>
+               </URL_LINK>
+          </STUDY_LINK>
+          <STUDY_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SAMPLE</DB>
+                    <ID>ERS3223581-ERS3223600</ID>
+               </XREF_LINK>
+          </STUDY_LINK>
+          <STUDY_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX3246762-ERX3246781</ID>
+               </XREF_LINK>
+          </STUDY_LINK>
+          <STUDY_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR3219281-ERR3219300</ID>
+               </XREF_LINK>
+          </STUDY_LINK>
+          <STUDY_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA1767252</ID>
+               </XREF_LINK>
+          </STUDY_LINK>
+          <STUDY_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERP114266&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </STUDY_LINK>
+          <STUDY_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERP114266&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </STUDY_LINK>
+     </STUDY_LINKS>
+     <STUDY_ATTRIBUTES>
+          <STUDY_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>519438367</VALUE>
+          </STUDY_ATTRIBUTE>
+          <STUDY_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>25971918350</VALUE>
+          </STUDY_ATTRIBUTE>
+          <STUDY_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2020-04-16</VALUE>
+          </STUDY_ATTRIBUTE>
+          <STUDY_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2019-03-12</VALUE>
+          </STUDY_ATTRIBUTE>
+     </STUDY_ATTRIBUTES>
+</STUDY>
+</STUDY_SET>
