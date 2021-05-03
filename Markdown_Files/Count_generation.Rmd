@@ -157,7 +157,7 @@ name=${file}
 basename=`basename ${name} .fastq`
 
 kallisto quant -i ${index_dir} -o ${out_dir}/${basename} ${sample_dir}/${basename}.fastq \
---single -l 200 -s 20 -t 16
+--single -l 250 -s 25 -t 16
 done
 
 
