@@ -15,7 +15,7 @@ The Hierarchical Indexing for Spliced Alignment of Transcripts 2 (Kim et al., 20
 
 Fig. 2 was borrowed from Kim et al., it shows the scheme used by HISAT2 to map reads to the reference. The key things to note here are that this tool created two indexes. There is the global index that places a read in a specific location of the genome (can be just 28bp) and a local index that has smaller section of the genome (can be 56 bp) to allow short overhangs of splice sites to be mapped accurately. 
 
-![Overview of HISAT mapping](./Figures/HISAT2_scheme.jpg)
+![Overview of HISAT mapping](Figures/HISAT2_scheme.jpg)
 
 First, the mm10 mouse reference genome from [gencode](https://www.gencodegenes.org/mouse/) was used within `hisat-build` to construct an index. 
 
@@ -81,7 +81,7 @@ samtools view -b -q 40 -o ${out_dir}/${base}.bam ${in_dir}/${base}.bam
 
 Feature counts is a commonly used software that can quantify `.bam` files. It can be run on the terminal or from within the `Rsubread` bioconductor package. It reports raw counts for reads mapping to a features specified by a supplied `.gtf` file for genome annotations. The tool uses the schematic in Fig. 3 to count reads. 
 
-![featureCount assignment schematic](./Figures/featurecounts_2.JPG)
+![featureCount assignment schematic](Figures/featurecounts_2.JPG)
 
 All filtered `.bam` files can be stored within a variable in R using the `file.path()` function. This can then be called within featureCounts along with: 
 
@@ -110,7 +110,7 @@ Kallisto is another psudoaligner that was used here to quantify abundance. (Bray
 
 The kallisto index is builds a de Bruijin graph of k-mers. Mechanism of mapping is illustrated in Fig. 4 from Bray et al. Each circle represents a k-mer. Since the index stores the map of k-mers to their corresponding transcript and k-mers are used to extend the read along a path that leads to transcript identification. Unlike a classical aligner, kallisto combines the alignment and quantification under one function removing the need to secondary software before DESeq2 analysis. 
 
-![Kallisto mechanism](./Figures/Kallisto_scheme_2.JPG)
+![Kallisto mechanism](Figures/Kallisto_scheme_2.JPG)
 
 The index is build by simply supplying the transcriptome and `-i` indicates the prefix for the index file. 
 
@@ -133,13 +133,11 @@ ${sample_dir}/${basename}.fastq \
 --single -l 250 -s 25 -t 16
 ```
 
-All Kallisto counts can be found under `kallisto_counts` in the project repo. 
-
 ## Salmon
 
 Salmon is another pseudoaligner that uses k-mer counting similar to kallisto. It claims to handle sample specific and GC bias better than kallisto. (Patro et al., 2017) It follows a similar quasimapping scheme at the start and then through the various online and offline phases arrives at the bias estimates. Fig. 5 from Patro et al. illustrates this process.
 
-![Salmon mapping process](./Figures/salmon_scheme.JPG)
+![Salmon mapping process](Figures/salmon_scheme.JPG)
 
 One advantage of salmon is that it can quantify both `.fastq` and `.bam` files generated from traditional aligners making it a versatile tool overall. To start the analysis as with all the tools discussed so far, an index is generated. Since this method uses a transcriptome. 
 
@@ -173,8 +171,6 @@ salmon quant -i ${index_dir} -l A \
   -o ${out_dir}/${base}_quant
 
 ```
-
-All Salmon counts can be found under `salmon_counts` in the project repo. 
 
 ## DESeq2
 
