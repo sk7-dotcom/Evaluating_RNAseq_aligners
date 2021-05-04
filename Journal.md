@@ -17,3 +17,9 @@ What is the online vs offline phase of Salmon mean. Need to read more about this
 Reading about the HISAT2 mecahnism was the most fun I had in this project, lets learn more about Burrows Wheeler... I barely scratched the surface there. 
 
 More thoughts to come, lets stay postive! 
+
+2021/05/04 
+
+Spent some more time thinking about next steps. Since there was a lot more I wanted to do in terms of finding out what pathways are actvated, why not drop HISAT2 for now and proceed with Salmon and Kallisto data. Start by fixing the treatment vs control problem and then ficuge out what the next steps are for pathway analysis. Not somehting I have done much reading on, will need a lot of help here from Omar. 
+
+Also want to understand the difference between the Wald test and the LTR. Does that solve my issue with the correct fold changes? I have the code in the second R-script, maybe thats a good point of comparison. Since I got the day 14 data generated there, maybe thats a good way to compare day 7 to day 14 readily and see if I can go through the whole way. Perhaps I would have been better off taking this approach from the start. 
